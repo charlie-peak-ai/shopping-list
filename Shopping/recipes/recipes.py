@@ -1,4 +1,4 @@
-from Shopping.recipes.core import Recipe
+from Shopping.recipes.core import IngredientQuantity, Recipe
 from Shopping.recipes.ingredients import *
 
 Bolognese = Recipe(
