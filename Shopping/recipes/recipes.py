@@ -3,7 +3,7 @@ from Shopping.recipes.ingredients import *
 
 Bolognese = Recipe(
     name="Bolognese",
-    serves=16,
+    serves=12,
     ingredients=[
         IngredientQuantity(ingredient=Bacon, number=6),
         IngredientQuantity(ingredient=Mince, number=1),
@@ -14,7 +14,7 @@ Bolognese = Recipe(
 )
 SweetPotatoChilli = Recipe(
     name="Sweet Potato Chilli",
-    serves=16,
+    serves=12,
     ingredients=[
         IngredientQuantity(ingredient=CuminSeeds, number=1),
         IngredientQuantity(ingredient=ChilliPaste, number=1),
@@ -23,7 +23,7 @@ SweetPotatoChilli = Recipe(
         IngredientQuantity(ingredient=TinBlackBean, number=3),
         IngredientQuantity(ingredient=TinTomatoes, number=3),
         IngredientQuantity(ingredient=FetaCheese, number=3),
-    ]
+    ],
 )
 
 ThaiCurry = Recipe(
@@ -34,6 +34,18 @@ ThaiCurry = Recipe(
         IngredientQuantity(ingredient=SpringOnion, number=2),
         IngredientQuantity(ingredient=RedPepper, number=2),
         IngredientQuantity(ingredient=CoconutMilk, number=2),
-        IngredientQuantity(ingredient=Chicken, number=4)
-    ]
+        IngredientQuantity(ingredient=Chicken, number=4),
+    ],
+)
+
+SausageParp = Recipe(
+    name="Sausage Parp",
+    serves=2,
+    ingredients=[
+        IngredientQuantity(ingredient=Sausage, number=3),
+        IngredientQuantity(ingredient=Passatta, number=200),
+        IngredientQuantity(ingredient=FennelSeeds, number=1),
+        IngredientQuantity(ingredient=FreshPasta, number=1),
+        IngredientQuantity(ingredient=FreshParsely, number=0.5),
+    ],
 )
