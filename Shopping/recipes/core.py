@@ -16,6 +16,7 @@ class Categories(Enum):
     Meat = 160
     Dairy = 170
     Cleaning = 180
+    HomeGood = 185
     Alcohol = 190
     Drink = 200
     Breakfast = 210

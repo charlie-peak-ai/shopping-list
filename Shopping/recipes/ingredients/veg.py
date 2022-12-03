@@ -1,5 +1,5 @@
 from Shopping.recipes.core import Categories as c
-from Shopping.recipes.core import Ingredient, IngredientQuantity
+from Shopping.recipes.core import Ingredient
 
 RedOnion = Ingredient(name="Red Onion", category=c.Veg, est_price=1, quantity=3)
 Carrot = Ingredient(name="Carrot", category=c.Veg, est_price=1, quantity=3)
