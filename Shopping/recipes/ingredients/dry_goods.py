@@ -8,6 +8,9 @@ TinBlackBean = Ingredient(name="Tin Black Beans", category=c.Tinned, est_price=0
 CoconutMilk = Ingredient(name="Tin Coconut Milk", category=c.Tinned, est_price=0.5, quantity=q.Tin)
 KidneyBeans = Ingredient(name="Kidney Beans", category=c.Tinned, est_price=1, quantity=q.Tin)
 
+Passatta = Ingredient(name="Passatta", category=c.DryGood, est_price=0.5, quantity=500)
+TomatoPuree = Ingredient(name="TomatoPuree", category=c.DryGood, est_price=0.5, quantity=500)
+
 Rice = Ingredient(name="Rice", category=c.DryGood, est_price=1, quantity=q.Pack)
 Pasta = Ingredient(name="Pasta", category=c.DryGood, est_price=1, quantity=q.Pack)
 
