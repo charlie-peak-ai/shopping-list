@@ -44,7 +44,7 @@ class ShoppingList:
 
         i: IngredientQuantity
         for i in sorted_list:
-            print(f"{i.ingredient.name:12} - {i.purchase_qty}")
+            print(f"{i.purchase_qty:<2}x  {i.ingredient.name:12}")
 
     def _extract_ingredients(self, ingredient_quantity: IngredientQuantity) -> None:
         """
@@ -73,20 +73,3 @@ class ShoppingList:
 
     def _calculate_cost(self) -> None:
         """Placeholder"""
-
-
-if __name__ == "__main__":
-    ShoppingList(
-        recipe_list=[
-            Bolognese,
-        ],
-        individual_items=[
-            IngredientQuantity(ingredient=Porridge, number=20),
-            IngredientQuantity(ingredient=Milk, number=2),
-            IngredientQuantity(ingredient=Bread, number=2),
-            IngredientQuantity(ingredient=Apples, number=1),
-            IngredientQuantity(ingredient=Jam, number=1),
-            IngredientQuantity(ingredient=Coffee, number=1),
-            IngredientQuantity(ingredient=Pasta, number=4),
-        ],
-    )
