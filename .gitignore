@@ -1,0 +1,35 @@
+/coty/AA config/
+*.log
+*.env
+*.gz
+*.s3cache
+*.env.json
+*.DS_Store
+
+# User-specific stuff:
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/dictionaries
+.idea/vcs.xml
+.idea/misc.xml
+.idea/peak_ai.iml
+.idea/jsLibraryMappings.xml
+.DS_Store
+
+# Sensitive or high-churn files:
+.idea/dataSources.ids
+.idea/dataSources.xml
+.idea/dataSources.local.xml
+.idea/sqlDataSources.xml
+.idea/dynamic.xml
+.idea/uiDesigner.xml
+/.idea/
+/backup/
+*/logs/
+/venv/
+/venv*
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*/__pycache__
+*.py[cod]
