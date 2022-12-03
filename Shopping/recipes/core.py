@@ -7,18 +7,18 @@ from pydantic import BaseModel, Field, validator
 class Categories(Enum):
     """Food Categories, roughly grouped to make navigating Aldi easier"""
 
-    Meat = 22
-    Veg = 1
-    Fruit = 2
-    Dairy = 3
-    Cleaning = 4
-    Seasoning = 5
-    Alcohol = 6
-    Breakfast = 7
-    Tinned = 8
-    Sauce = 9
-    Drink = 10
-    DryGood = 11
+    Veg = 100
+    Fruit = 110
+    Seasoning = 120
+    DryGood = 130
+    Tinned = 140
+    Sauce = 150
+    Meat = 160
+    Dairy = 170
+    Cleaning = 180
+    Alcohol = 190
+    Drink = 200
+    Breakfast = 210
 
 
 class Quantities(Enum):
@@ -37,6 +37,7 @@ class ShoppingBaseModel(BaseModel):
 
     class Config:
         """Config settings"""
+
         use_enum_values = True
 
     @validator("name", check_fields=False)
@@ -59,7 +60,7 @@ class IngredientQuantity(ShoppingBaseModel):
     """Class for ingredients required in a recipe, quantity"""
 
     ingredient: Ingredient = Field(..., description="The base ingredient")
-    number: int = Field(..., description="How many are required")
+    number: float = Field(..., description="How many are required")
     purchase_qty: int = Field(None, description="How many to actually buy")
 
 
